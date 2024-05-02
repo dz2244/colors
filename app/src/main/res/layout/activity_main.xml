@@ -7,7 +7,6 @@
     tools:context=".MainActivity">
 
     <Button
-        android:id="@+id/button"
         android:layout_width="112dp"
         android:layout_height="wrap_content"
         android:text="Button"
@@ -20,8 +19,9 @@
 
     <Switch
         android:id="@+id/switch1"
-        android:layout_width="112dp"
+        android:layout_width="100dp"
         android:layout_height="50dp"
+        android:onClick="clickedSwitch"
         android:text="Switch"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/radioGroup"
@@ -41,27 +41,31 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <RadioButton
-            android:id="@+id/radioButton"
+            android:id="@+id/rbRed"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:onClick="clickedRbRed"
             android:text="RadioButton" />
 
         <RadioButton
-            android:id="@+id/radioButton2"
+            android:id="@+id/rbGreen"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:onClick="clickedRbGreen"
             android:text="RadioButton" />
 
         <RadioButton
-            android:id="@+id/radioButton3"
+            android:id="@+id/rbBlue"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:onClick="clickedRbBlue"
             android:text="RadioButton" />
 
         <RadioButton
-            android:id="@+id/radioButton4"
+            android:id="@+id/rbWhite"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:onClick="clickedRbWhite"
             android:text="RadioButton" />
     </RadioGroup>
 
